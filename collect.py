@@ -26,16 +26,6 @@ def get_data():
     return users
 
 users = get_data()
-# print(users)
-# def db_connect():
-# st.session_state.uri = "mongodb+srv://jinying:llama123456@atlascluster.8roxqzj.mongodb.net/?retryWrites=true&w=majority"
-# st.session_state.client = MongoClient(st.session_state.uri, server_api=ServerApi('1'))
-# st.session_state.mydb = client['user']
-# st.session_state.userInfo = st.session_state.mydb['userInfo']
-# st.session_state.userQA = st.session_state.mydb['userQA']
-    # chapter1 = mydb['chapter1QA']
-# for x in st.session_state.userInfo.find():
-#     print(x)
 
 st.header('QA数据采集')
 if "visibility" not in st.session_state:
